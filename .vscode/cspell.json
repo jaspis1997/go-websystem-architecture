@@ -1,0 +1,34 @@
+{
+	"ignorePaths": [
+		"go/pkg/**/*",
+		"builtin/**/*",
+		"go.mod",
+		"go.sum",
+		".vscode/*",
+		".gitignore"
+	],
+	"words": [
+		"addf",
+		"autoincrement",
+		"debugf",
+		"erro",
+		"gonic",
+		"infof",
+		"keyvals",
+		"macropygia",
+		"mattn",
+		"natefinch",
+		"njsproj",
+		"notnull",
+		"ntvs",
+		"pgdialect",
+		"pgdriver",
+		"sqldb",
+		"sqlitedialect",
+		"sqliteshim",
+		"sslmode",
+		"uptrace",
+		"warnf",
+		"zglob"
+	]
+}

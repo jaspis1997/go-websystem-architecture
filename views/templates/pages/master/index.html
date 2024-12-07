@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  {{>head title="Vite + Solid + TS"}}
+  <body>
+    {{>common/header}} 
+    \{{ template "_header" . }}
+    \{{ template "master/_settings" . }}
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script> 
+  </body>
+</html>

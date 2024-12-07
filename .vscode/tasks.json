@@ -1,0 +1,43 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"cwd": "${workspaceFolder}",
+	"tasks": [
+		{
+			"label": "go build",
+			"type": "shell",
+			"command": "go",
+			"options": {
+				"env": {}
+			},
+			"args": [
+				"build",
+				"-trimpath",
+				"-ldflags=\"-s -w\"",
+				"-o",
+				"./bin/main.exe",
+				"./cmd"
+			]
+		},
+		{
+			"label": "go build(Linux)",
+			"type": "shell",
+			"command": "go",
+			"options": {
+				"env": {
+					"GOOS": "linux",
+					"GOARCH": "amd64"
+				}
+			},
+			"args": [
+				"build",
+				"-trimpath",
+				"-ldflags=\"-s -w\"",
+				"-o",
+				"./bin/main",
+				"./cmd"
+			]
+		}
+	]
+}
