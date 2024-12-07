@@ -1,0 +1,32 @@
+{
+  "name": "views",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.17.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "biom": "biome lint --apply src && biome format --write src"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.17"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-solid": "^2.10.2",
+    "@biomejs/biome": "^1.9.4",
+    "@macropygia/vite-plugin-glob-input": "^0.0.18",
+    "@suid/icons-material": "^0.8.1",
+    "@suid/material": "^0.18.0",
+    "@suid/system": "^0.13.0",
+    "@suid/vite-plugin": "^0.3.1",
+    "@types/node": "^22.8.1",
+    "sass": "^1.80.4",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}
