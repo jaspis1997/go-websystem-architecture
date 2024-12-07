@@ -21,6 +21,21 @@
 			"buildFlags": ["-trimpath"],
 			"args": [],
 			"env": {}
+		},
+		{
+			"name": "Launch Package (views)",
+			"type": "go",
+			"request": "launch",
+			"mode": "debug",
+			"cwd": "${workspaceFolder}",
+			"program": "./test/views/",
+			"buildFlags": ["-trimpath"],
+			"args": [],
+			"env": {
+				"PORT": "19565",
+				"VIEWS_ROOT_PATH": "./views",
+				"TEMPLATE_ROOT_PATH": "views/dist"
+			}
 		}
 	]
 }
