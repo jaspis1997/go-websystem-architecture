@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  {{>head title="Vite + Solid + TS"}}
+  <body>
+    {{>common/header}} 
+    \{{ template "_header" . }}
+    \{{ template "users/_settings" . }}
+    \{{ template "users/bank/_settings" . }}
+    <div>
+      <h1>Bank</h1>
+    </div>
+  </body>
+</html>
